@@ -16,13 +16,51 @@ const Index = () => {
 
       {/* Header Bar */}
       <header className="relative z-10 flex items-center justify-between px-4 py-3 bg-[hsl(230,25%,15%,0.9)] backdrop-blur-sm border-b border-border">
-        <div className="flex items-center gap-2">
-          <svg width="28" height="28" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="120" cy="120" r="120" fill="#2AABEE"/>
-            <path d="M98 175c-3.9 0-3.2-1.5-4.6-5.2L82 134.8l84-50" fill="#C8DAEA"/>
-            <path d="M98 175c3 0 4.3-1.4 6-3l16-15.6-20-12" fill="#A9C9DD"/>
-            <path d="M100 144.4l48.4 35.7c5.5 3 9.5 1.5 10.9-5.1l19.7-92.8c2-8-3.1-11.7-8.4-9.3l-116 44.7c-7.8 3.1-7.7 7.5-1.4 9.5l29.7 9.3 68.8-43.4c3.2-2 6.2-.9 3.8 1.3" fill="white"/>
-          </svg>
+        <div className="flex items-center gap-2.5">
+          {/* Liquid Glass Telegram Icon */}
+          <div className="liquid-glass-icon">
+            <svg width="32" height="32" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="glass-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="rgba(255,255,255,0.25)" />
+                  <stop offset="50%" stopColor="rgba(255,255,255,0.08)" />
+                  <stop offset="100%" stopColor="rgba(255,255,255,0.20)" />
+                </linearGradient>
+                <linearGradient id="glass-shine" x1="20%" y1="0%" x2="80%" y2="100%">
+                  <stop offset="0%" stopColor="rgba(255,255,255,0.5)" />
+                  <stop offset="40%" stopColor="rgba(255,255,255,0)" />
+                  <stop offset="100%" stopColor="rgba(255,255,255,0.15)" />
+                </linearGradient>
+                <linearGradient id="tg-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#5BC5F2" />
+                  <stop offset="100%" stopColor="#2A8FEE" />
+                </linearGradient>
+                <filter id="glass-blur">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+                </filter>
+                <filter id="glass-glow">
+                  <feGaussianBlur stdDeviation="8" />
+                  <feComposite in="SourceGraphic" />
+                </filter>
+              </defs>
+              {/* Outer glow */}
+              <circle cx="120" cy="120" r="110" fill="url(#tg-blue)" opacity="0.15" filter="url(#glass-glow)" />
+              {/* Glass body */}
+              <circle cx="120" cy="120" r="105" fill="url(#glass-bg)" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5" />
+              {/* Inner color tint */}
+              <circle cx="120" cy="120" r="104" fill="url(#tg-blue)" opacity="0.35" />
+              {/* Top shine arc */}
+              <ellipse cx="120" cy="80" rx="70" ry="50" fill="url(#glass-shine)" opacity="0.6" />
+              {/* Paper plane */}
+              <g opacity="0.95">
+                <path d="M98 175c-3.9 0-3.2-1.5-4.6-5.2L82 134.8l84-50" fill="rgba(200,218,234,0.7)"/>
+                <path d="M98 175c3 0 4.3-1.4 6-3l16-15.6-20-12" fill="rgba(169,201,221,0.7)"/>
+                <path d="M100 144.4l48.4 35.7c5.5 3 9.5 1.5 10.9-5.1l19.7-92.8c2-8-3.1-11.7-8.4-9.3l-116 44.7c-7.8 3.1-7.7 7.5-1.4 9.5l29.7 9.3 68.8-43.4c3.2-2 6.2-.9 3.8 1.3" fill="white"/>
+              </g>
+              {/* Bottom reflection */}
+              <ellipse cx="120" cy="170" rx="60" ry="25" fill="rgba(255,255,255,0.06)" />
+            </svg>
+          </div>
           <span className="text-foreground font-semibold text-lg">Telegram</span>
         </div>
         <a
