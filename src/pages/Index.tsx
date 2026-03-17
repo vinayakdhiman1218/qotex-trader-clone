@@ -96,7 +96,6 @@ const Index = () => {
 
           {/* Description */}
           <div className="text-muted-foreground text-sm text-center leading-relaxed space-y-3">
-            <p>We provide educational charts, analysis, and market psychology lessons. This is not a signals or investment advice channel. All content is for learning purposes only - not a financial advice.</p>
             <div className="space-y-1 text-foreground font-medium">
               <p>•𝐐𝐓𝐗 𝐓𝐑𝐔𝐒𝐓𝐄𝐃 𝐁𝐘 𝟏𝟎𝟎𝐊+ 𝐌𝐄𝐌𝐁𝐄𝐑𝐒</p>
               <p>•𝐅𝐎𝐑 𝐏𝐑𝐎𝐅𝐈𝐓 𝐓𝐀𝐊𝐄 𝐐𝐓𝐗 𝐒𝐎𝐅𝐓𝐖𝐀𝐑𝐄</p>
