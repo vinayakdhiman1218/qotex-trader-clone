@@ -93,12 +93,6 @@ const Index = () => {
                 ))}
               </div>
 
-              {/* Join text */}
-              <p className="text-muted-foreground text-sm text-center leading-relaxed">
-                If you have Telegram, you can view and join<br/>
-                <span className="text-foreground font-semibold">𓄀•𝐐𝐓𝐗 𝐐𝐔𝐎𝐓𝐄𝐗•🪬</span> right away.
-              </p>
-
               {/* CTA */}
               <a
                 href={TELEGRAM_LINK}
@@ -109,6 +103,12 @@ const Index = () => {
                 <span className="relative z-10">Join Free Channel</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
               </a>
+
+              {/* Join text */}
+              <p className="text-muted-foreground text-sm text-center leading-relaxed">
+                If you have Telegram, you can view and join<br/>
+                <span className="text-foreground font-semibold">𓄀•𝐐𝐓𝐗 𝐐𝐔𝐎𝐓𝐄𝐗•🪬</span> right away.
+              </p>
             </div>
           </div>
         </div>
