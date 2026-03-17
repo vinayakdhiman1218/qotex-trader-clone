@@ -65,14 +65,14 @@ const Index = () => {
               <div className="flex items-center gap-2">
                 <h1 className="text-lg font-bold text-foreground tracking-tight">𓄀•𝐐𝐓𝐗 𝐐𝐔𝐎𝐓𝐄𝐗•🪬</h1>
                 <div className="w-5 h-5 flex items-center justify-center flex-shrink-0">
-                  <svg viewBox="0 0 24 24" className="w-5 h-5">
+                  <svg viewBox="0 0 48 48" className="w-5 h-5">
                     <path
                       fill="#1DA1F2"
-                      d="M12 2l2.2 2.6 3.4-.4.4 3.4 2.6 2.2-2.6 2.2-.4 3.4-3.4-.4L12 18l-2.2-2.6-3.4.4-.4-3.4L3.4 10l2.6-2.2.4-3.4 3.4.4L12 2z"
+                      d="M24 2l5 6 8-1 1 8 6 5-6 5-1 8-8-1-5 6-5-6-8 1-1-8-6-5 6-5 1-8 8 1 5-6z"
                     />
                     <path
                       fill="#fff"
-                      d="M10.2 13.2l-1.4-1.4-1.2 1.2 2.6 2.6 5.2-5.2-1.2-1.2z"
+                      d="M20 26l-4-4-2 2 6 6 14-14-2-2z"
                     />
                   </svg>
                 </div>
