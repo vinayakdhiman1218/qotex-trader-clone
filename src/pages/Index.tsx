@@ -64,9 +64,16 @@ const Index = () => {
               {/* Title */}
               <div className="flex items-center gap-2">
                 <h1 className="text-lg font-bold text-foreground tracking-tight">𓄀•𝐐𝐓𝐗 𝐐𝐔𝐎𝐓𝐄𝐗•🪬</h1>
-                <div className="w-5 h-5 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-accent-foreground" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M9.04 15.57l-.39 4.12c.56 0 .8-.24 1.1-.53l2.64-2.52 5.47 4c1 .55 1.71.26 1.96-.92l3.55-16.65h.01c.3-1.38-.5-1.92-1.47-1.56L1.58 9.27c-1.34.52-1.32 1.27-.23 1.6l5.8 1.81L19.5 5.4c.58-.35 1.1-.16.67.19"/>
+                <div className="w-5 h-5 flex items-center justify-center flex-shrink-0">
+                  <svg viewBox="0 0 24 24" className="w-5 h-5">
+                    <path
+                      fill="#1DA1F2"
+                      d="M12 2l2.2 2.6 3.4-.4.4 3.4 2.6 2.2-2.6 2.2-.4 3.4-3.4-.4L12 18l-2.2-2.6-3.4.4-.4-3.4L3.4 10l2.6-2.2.4-3.4 3.4.4L12 2z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M10.2 13.2l-1.4-1.4-1.2 1.2 2.6 2.6 5.2-5.2-1.2-1.2z"
+                    />
                   </svg>
                 </div>
               </div>
